@@ -2,15 +2,15 @@ import React from 'react';
 import { AiFillEye } from 'react-icons/ai';
 import Styles from './Video.module.scss';
 
-const Video = () => {
+const Video = ({ video }) => {
     return (
         <div className={Styles.video}>
             <div className={Styles.top}>
-                <img src="https://i.ytimg.com/vi/vGoZBon56IY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbhFJRmyYegm6qDWU1nrYm0GMSSg" alt=""/>
+                <img src={video.snippet.thumbnails.default.url} alt=""/>
                 <span>05:43</span>
             </div>
             <div className={Styles.title}>
-                <h3>Create app in 5 minutes #made by chintu</h3>
+                <h3>{video.snippet.title}</h3>
             </div>
             <div className={Styles.details}>
                 <span>

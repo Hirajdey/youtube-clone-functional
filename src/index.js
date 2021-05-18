@@ -11,7 +11,6 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './_base.scss';
 
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

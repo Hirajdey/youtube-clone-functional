@@ -15,7 +15,7 @@ const Layout = ({children}) => {
   const handleToggleSidebar = () => {
     toggleSidebar(prvValue => !prvValue)
   }
-
+  
   return(
     <>
       <Header handleOnclick={handleToggleSidebar}/>
