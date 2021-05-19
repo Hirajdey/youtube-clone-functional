@@ -9,9 +9,9 @@ import { getPopularVideos } from '../redux/actions/videos.action';
 
 const HomeScreens = () => {
     const dispatch = useDispatch()
-
+    
     useEffect(() => {
-
+        
         dispatch(getPopularVideos())
         
     }, [dispatch])
